@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Dallas Weather</title>
+  <style>
+    #wrapper {
+      background-color: rgb(153, 164, 180);
+      padding: 50px 80px;
+    }
+    #main {
+      padding: 15px;
+      margin-left: 100px;
+      background-color: rgb(118, 214, 198);
+      border-radius: 10px;
+      margin-right: 100px;
+      padding-bottom: 50px;
+    }
+    h1 {
+      text-align: center;
+    }
+    #info {
+      display: inline-block;
+      width: 400px;
+      margin-left: 20px;
+    }
+    img {
+      display: inline-block;
+      vertical-align: top;
+      width: 500px;
+    }
+  </style>
+</head>
+<body>
+  <div id = "wrapper">
+    <div id = "main">
+      <h1>Dallas, TX</h1>
+      <div id = "info">
+        <p>Humidity: {{weather.main.humidity}}</p>
+        <p>Temperature (Average): {{temp}}</p>
+        <p>Temperature (High): {{high}}</p>
+        <p>Temperature (Low): {{low}}</p>
+        <p>Status: {{weather.weather[0].main}}</p>
+      </div>
+      <img src = "https://community-wealth.org/sites/clone.community-wealth.org/files/Dallas%202.jpg">
+    </div>
+  </div>
+</body>
+</html>

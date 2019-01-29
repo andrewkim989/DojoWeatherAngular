@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Burbank Weather</title>
+  <style>
+    #wrapper {
+      background-color: rgb(153, 164, 180);
+      padding: 50px 80px;
+    }
+    #main {
+      padding: 15px;
+      margin-left: 100px;
+      background-color: rgb(186, 146, 209);
+      border-radius: 10px;
+      margin-right: 100px;
+      padding-bottom: 50px;
+    }
+    h1 {
+      text-align: center;
+    }
+    #info {
+      display: inline-block;
+      width: 400px;
+      margin-left: 20px;
+    }
+    img {
+      display: inline-block;
+      vertical-align: top;
+      width: 500px;
+    }
+  </style>
+</head>
+<body>
+  <div id = "wrapper">
+    <div id = "main">
+      <h1>Burbank, CA</h1>
+      <div id = "info">
+        <p>Humidity: {{weather.main.humidity}}</p>
+        <p>Temperature (Average): {{temp}}</p>
+        <p>Temperature (High): {{high}}</p>
+        <p>Temperature (Low): {{low}}</p>
+        <p>Status: {{weather.weather[0].main}}</p>
+      </div>
+      <img src = "https://s.abcnews.com/images/Travel/CB_burbank_california_jef_130701_33x16_992.jpg">
+    </div>
+  </div>
+</body>
+</html>

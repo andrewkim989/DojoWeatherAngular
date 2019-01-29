@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Washington Weather</title>
+  <style>
+    #wrapper {
+      background-color: rgb(153, 164, 180);
+      padding: 50px 80px;
+    }
+    #main {
+      padding: 15px;
+      margin-left: 100px;
+      background-color: rgb(218, 230, 173);
+      border-radius: 10px;
+      margin-right: 100px;
+      padding-bottom: 50px;
+    }
+    h1 {
+      text-align: center;
+    }
+    #info {
+      display: inline-block;
+      width: 400px;
+      margin-left: 20px;
+    }
+    img {
+      display: inline-block;
+      vertical-align: top;
+      width: 500px;
+    }
+  </style>
+</head>
+<body>
+  <div id = "wrapper">
+    <div id = "main">
+      <h1>Washington, DC</h1>
+      <div id = "info">
+        <p>Humidity: {{weather.main.humidity}}</p>
+        <p>Temperature (Average): {{temp}}</p>
+        <p>Temperature (High): {{high}}</p>
+        <p>Temperature (Low): {{low}}</p>
+        <p>Status: {{weather.weather[0].main}}</p>
+      </div>
+      <img src = "https://cdn.aarp.net/content/dam/aarp/travel/destination-guides/2018/03/1140-trv-dst-dc-main.imgcache.revd66f01d4a19adcecdb09fdacd4471fa8.web.jpg">
+    </div>
+  </div>
+</body>
+</html>
